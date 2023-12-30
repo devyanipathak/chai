@@ -16,7 +16,7 @@ const regularUser ={
         }
     }
 }
-console.log(regularUser.fullname.userfullname.firstname);
+//console.log(regularUser.fullname.userfullname.firstname);
 //There are two ways of merging: assign & spread.
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -30,10 +30,39 @@ const obj4 = {5: "a", 6: "b"}
 //we can also use spread operator to merge objects into one object.
 const obj3 = {...obj1, ...obj2, ...obj4};
 //console.log(obj3)
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+
+/***************De-structuring and API************** */
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+//course.courseInstructor
+const {courseInstructor} = course;
+console.log(courseInstructor);
+
+//we can also rename courseInstructor in short
+const {courseInstructor: instructor} = course;
+console.log(instructor);
+
+/************ JSON APIs ************* */
+//This is JSON
+// {
+//     "name": "Devyani Pathak"
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
