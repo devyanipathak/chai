@@ -30,7 +30,8 @@ const user = {
 //Arrow function.
 // const chai = () => {
 //     let username = "hitesh"
-//     console.log(this);
+//     //console.log(this);
+//     //console.log(username);
 // }
 // chai();//shows {}
 
@@ -48,4 +49,4 @@ const user = {
 
 //to return object we need to wrap it into paranthesis
 const addTwo = (num1, num2) => ({username: "hitesh"})
-console.log(addTwo(3,4));
+//console.log(addTwo(3,4));

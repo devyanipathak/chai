@@ -10,7 +10,7 @@
 }
 //sayMyName();
 // function addTwoNumber(number1, number2){
-//     console.log(number1 + number2);
+//     console.log(number1 + number2);//simply add two numbers. 
 // }
 function addTwoNumber(number1, number2){
         // let result = number1 + number2
@@ -32,13 +32,13 @@ const result = addTwoNumber(3, 5)
 //console.log(loginUserMessage());
 //To eliminate this condition we will use if else condition.
 function loginUserMessage(username /*="sam" //this is default user to avoid undefined, it can be override. */){
-    if(!username /*=== undefined*/){
+    if(!username /*=== undefined*/){//two different methods for checking username.
         console.log("Please enter a username")
         return
     }
     return `${username} just logged in`
 }
-//console.log(loginUserMessage())
+console.log(loginUserMessage())
 //...item is rest operator and spread according to situation here it is rest.
 //function calculatCartPrice(...num1){}
 function calculatCartPrice(val1, val2,...num1){
@@ -65,5 +65,5 @@ const myNewArray = [200, 400, 100, 600]
 function returnSecondValue(getArray){
     return getArray[1]
 }
-console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+//console.log(returnSecondValue(myNewArray));
+//console.log(returnSecondValue([200, 400, 500, 1000]));
